@@ -4,16 +4,7 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="17a7a211-4916-4c8d-bbb6-987fa8065092" name="Changes" comment="great">
-      <change afterPath="$PROJECT_DIR$/run].py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/pythonProject.iml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/pythonProject.iml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/bp_api/test/tests.py" beforeDir="false" afterPath="$PROJECT_DIR$/bp_api/test/tests.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/posts/dao/comm.dao.py" beforeDir="false" afterPath="$PROJECT_DIR$/posts/dao/comm.dao.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/posts/dao/post.dao.py" beforeDir="false" afterPath="$PROJECT_DIR$/posts/dao/post.dao.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/posts/test/view.py" beforeDir="false" afterPath="$PROJECT_DIR$/posts/test/view.py" afterDir="false" />
-    </list>
+    <list default="true" id="17a7a211-4916-4c8d-bbb6-987fa8065092" name="Changes" comment="е" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -196,7 +187,14 @@
       <option name="project" value="LOCAL" />
       <updated>1660415865793</updated>
     </task>
-    <option name="localTasksCounter" value="2" />
+    <task id="LOCAL-00002" summary="е">
+      <created>1661973163349</created>
+      <option name="number" value="00002" />
+      <option name="presentableId" value="LOCAL-00002" />
+      <option name="project" value="LOCAL" />
+      <updated>1661973163349</updated>
+    </task>
+    <option name="localTasksCounter" value="3" />
     <servers />
   </component>
   <component name="Vcs.Log.Tabs.Properties">
@@ -212,7 +210,8 @@
   </component>
   <component name="VcsManagerConfiguration">
     <MESSAGE value="great" />
-    <option name="LAST_COMMIT_MESSAGE" value="great" />
+    <MESSAGE value="е" />
+    <option name="LAST_COMMIT_MESSAGE" value="е" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
