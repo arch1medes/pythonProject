@@ -3,6 +3,11 @@ from json import JSONDecodeError
 from posts.dao.comm import Comment
 from exceptions.data_exceptions import DataSourceError
 
+
+class JSONDecoderError:
+    pass
+
+
 class CommentDAO:
 
     def __init__(self,path):
@@ -33,8 +38,8 @@ class CommentDAO:
 
 
     def get_comments_by_pk(self, post_pk:int) -> list[Comment]:
-      """получает комменты по pk"""
         comments:list[Comment] = self._load_comments()
         comments_match: list[Comment]= [c for c in comments if c.post_pk == post_pk]
+
         return comments_match
 

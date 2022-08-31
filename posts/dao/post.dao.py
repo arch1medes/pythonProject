@@ -1,5 +1,8 @@
 import json
 from json import JSONDecoderError
+from typing import List, Any
+
+import data as data
 
 from posts.dao.post import Post
 from exceptions.exceptions import DataSourceError
@@ -64,7 +67,7 @@ class PostDAO:
          user_name = str(user_name).lower()
          posts = self._load_posts()
 
-         matching_posts=[post for post in posts if post.poster_name.lower() == user_name]
+         matching_posts: list[Any]=[post for post in posts if post.poster_name.lower() == user_name]
 
          return matching_posts
 

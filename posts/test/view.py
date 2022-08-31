@@ -1,13 +1,12 @@
-from flask import Blueprint, render_template
-from werkzeug.exceptions import abort
+from typing import Optional
 
+from flask import Blueprint, render_template
+from posts.dao.post.dao import PostDAO
+from venv.config import DATA_PATH_POSTS, DATA_PATH_COMMENTS
+from werkzeug.exceptions import abort
 
 from posts.dao.comm import Comment
 from posts.dao.post import Post
-from posts.dao.comm.dao import CommentDAO
-from posts.dao.post.dao import PostDAO
-
-from config import DATA_PATH_POSTS,DATA_PATH_COMMENTS
 
 #создаем блупринт
 bp_posts = Blueprint("posts", __name__,template_folder="templats")
@@ -28,7 +27,7 @@ def page_posts_index():
 @bp_posts.route("/posts/<int:pk>/")
 def page_posts_single(pk):
     """страничка одного поста"""
-    post: Post | None = post.dao.get_by_pk()
+    post: Optional[Post] = post.dao.get_by_pk()
     comments: list[Comment] = comm.dao.get_comments_by_post_pk(pk)
 
     if post is None:
@@ -46,11 +45,11 @@ def page_posts_by_user(user_name: int):
 def page_posts_search():
 
     s: str = request.args.get("s","")
-       if s == "":
+    if s == "":
            posts=[]
-       else:
+    else:
            posts:list[Post] = post.dao.search_in_content(s)
 
 
     posts = post.dao.get_by_poster(user_name)
-    return render_template("posts_user-feed.html", posts=posts, s=s, posts_length=len(posts))
+    return render_template("posts_user-feed.html", posts=posts, posts_length=len(posts))

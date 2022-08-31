@@ -1,6 +1,5 @@
 import pytest
 
-import main
 
 
 class TestApi:
@@ -10,7 +9,7 @@ class TestApi:
       @pytest.fixture
       def app_instance(self):
           app = main.app
-          app.config["DATA_PATH_POSTS"] = os.path.join("posts", "test, "post_mock")
+          app.config["DATA_PATH_POSTS"] = os.path.join("posts", "test")
           test_client = app.test_client()
           return test_client
 
